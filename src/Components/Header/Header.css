@@ -3,9 +3,12 @@ header
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 70px;
+    height:70px;
     background-color: rgb(41, 220, 91);
-    z-index:20px;
+    font-family: monospace;
+    position:sticky;
+    z-index:10;
+    top:0%;
 }
 header h2{
     font-size:28px;

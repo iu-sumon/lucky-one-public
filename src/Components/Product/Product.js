@@ -6,13 +6,10 @@ const Product = (props) => {
 
         <div className='product-cart'>
             <img src={img} alt="" />
-            <div className='product-details'>
-                <h4 className='product-name'>{name}</h4>
-                <p className='product-price'>Price: ${price}</p>
-
-            </div>
+            <h4>{name}</h4>
+            <p><b>Price:{price}</b></p>
             <div>
-                <button className='btn-cart'>Add To Cart <i class="fa-solid fa-cart-plus"></i></button>
+                <button onClick={() => props.handler(props.product)} className='btn-cart'>Add To Cart <i className="fa-solid fa-cart-plus"></i></button>
             </div>
         </div>
 
