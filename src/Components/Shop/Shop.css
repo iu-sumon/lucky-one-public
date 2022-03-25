@@ -1,12 +1,13 @@
 .container
 {
         display:grid;
-        grid-template-columns: 4fr 1fr;
+        grid-template-columns: 3fr 2fr;
 }
 .order-summary
 {
-    background-color:rgba(255, 153, 0, 0.3);
+    background-color:#F2F2F2;
     border-radius:0px 0px 8px 8px;
+    margin-left:20px;
     height:650px;
     position: sticky;
     top: 0;;
