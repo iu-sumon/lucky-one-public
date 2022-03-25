@@ -1,0 +1,26 @@
+header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(41, 220, 91);
+    z-index:20px;
+}
+header h2{
+    font-size:28px;
+    color:black;
+}
+  
+nav a
+{
+    text-decoration: none;
+    margin-right: 35px;
+    font-size: 18px;
+    font-family: monospace;
+    font-weight: 400;
+    color:black;
+}
+nav a:hover{
+  color:coral;
+}
