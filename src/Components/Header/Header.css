@@ -5,7 +5,7 @@ header
     align-items: center;
     height:70px;
     background-color: rgb(41, 220, 91);
-    font-family: monospace;
+    font-family:Lato;
     position:sticky;
     z-index:10;
     top:0%;
@@ -20,7 +20,7 @@ nav a
     text-decoration: none;
     margin-right: 35px;
     font-size: 18px;
-    font-family: monospace;
+    font-family:Lato;
     font-weight: 400;
     color:black;
 }

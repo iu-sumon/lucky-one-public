@@ -1,0 +1,12 @@
+.accordion
+{
+    width:80%;
+    margin:0px auto;
+    background-color: rgb(41, 220, 91);
+    font-family:Lato;
+    font-size:20px;
+    padding: 30px;
+    margin-bottom:20px;
+    border-radius: 20px 0px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}

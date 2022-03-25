@@ -5,8 +5,8 @@
     border-radius:20px 0px;
     position: relative;
     text-align: center;
-    font-size:15px;
-    font-family: monospace;
+    font-size:17px;
+    font-family:Lato;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 .product-cart img 
@@ -39,7 +39,7 @@
     box-sizing: border-box;
     border-radius:20px 0px;
     cursor: pointer;
-    font-family: monospace;
+    font-family:Lato;
      
 }
 /* .btn-cart:hover

@@ -4,19 +4,18 @@ import Product from '../Product/Product';
 import './Shop.css'
 const Shop = () => {
     const [products, setProducts] = useState([])
-    const [order,setOrder]=useState([])
+    const [order, setOrder] = useState([])
     useEffect(() => {
         fetch('products.json')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])
 
-    const handler=(selectedProduct)=>{
+    const handler = (selectedProduct) => {
         setOrder(selectedProduct)
     }
     return (
-
-        <div className='container'>
+        <div className='parent'>
 
             <div className='product-container'>
                 {
@@ -29,10 +28,10 @@ const Shop = () => {
             </div>
 
             <div className='order-summary'>
-               <Order 
-                order={order}
-             
-               ></Order>
+                <Order
+                    order={order}
+
+                ></Order>
             </div>
 
         </div>
