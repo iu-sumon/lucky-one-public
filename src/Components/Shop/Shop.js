@@ -15,7 +15,7 @@ const Shop = () => {
     }, [])
 
     const handler = (selectedProduct) => {
-
+// git problems
         if (cart.length < 4) {
             const getCarts = ([...cart, selectedProduct])
             setCart(getCarts)
