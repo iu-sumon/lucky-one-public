@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# TechDen Laptop Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My Project Live Link  [TechDen Laptop Store](https://cosmic-phoenix-a7ebc5.netlify.app/).
 
 ## Available Scripts
 
