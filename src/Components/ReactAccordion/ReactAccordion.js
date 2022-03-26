@@ -9,7 +9,7 @@ const ReactAccordion = () => {
                     <Accordion.Header>How react works?</Accordion.Header>
                     <Accordion.Body>
                         React uses a declarative paradigm that makes it easier to reason about User's application and aims to be both efficient and flexible. It designs simple views for each state in your application, and React will efficiently update and render just the right component when your data changes.
-                        React implements a virtual DOM that is basically a DOM tree representation in JavaScript. So when it needs to read or write to the DOM, it will use the virtual representation of it. Then the virtual DOM will try to find the most efficient way to update the browser’s DOM.
+                        React implements a virtual DOM that is basically a DOM tree representation in JavaScript. So when it needs to read or write to the DOM, it will use the virtual representation of it. Then the virtual DOM will try to find the most efficient way to update the browsers DOM.
 
                     </Accordion.Body>
                 </Accordion.Item>
