@@ -27,7 +27,7 @@ const ReactAccordion = () => {
                                 <tr>
 
                                     <td>Props are basically data that flows from one to another component as a parameters. Props can not be modified in a component.</td>
-                                    <td>React components has a built-in state object which is private to a component. State can not be accessed from outside of the class. However it can be passed as an argument to another component.</td>
+                                    <td>React components has a built-in state object which is private to a component.State can not be accessed from outside of the class. However it can be passed as an argument to another component.</td>
                                 </tr>
                                 <tr>
 
