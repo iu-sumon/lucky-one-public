@@ -19,43 +19,43 @@ const ReactAccordion = () => {
                         <table className="table table-hover table-responsive">
                             <tbody>
                                 <tr>
-                                    <th scope="col">No.</th>
+                                    
                                     <th scope="col" className="text-center">Props</th>
                                     <th scope="col" className="text-center">State</th>
 
                                 </tr>
                                 <tr>
-                                    <td><b>1</b></td>
+                                    
                                     <td>Props are basically data that flows from one to another component as a parameters. Props can not be modified in a component.</td>
                                     <td>React components has a built-in state object which is private to a component. State can not be accessed from outside of the class. However it can be passed as an argument to another component.</td>
                                 </tr>
                                 <tr>
-                                    <td><b>2</b></td>
+                                    
                                     <td>Props can be accessed by the child component.</td>
                                     <td>State can not be accessed by the child component.</td>
                                 </tr>
                                 <tr>
-                                    <td><b>3</b></td>
+                                   
                                     <td>Props are used to communicate between components.</td>
                                     <td>States can be used for rendering dynamic changes with the component.</td>
                                 </tr>
                                 <tr>
-                                    <td><b>4</b></td>
+                                    
                                     <td>Props are immutable.</td>
                                     <td>State is mutable.</td>
                                 </tr>
                                 <tr>
-                                    <td><b>5</b></td>
+                                    
                                     <td>Props are read-only.</td>
                                     <td>State changes can be asynchronous.</td>
                                 </tr>
                                 <tr>
-                                    <td><b>6</b></td>
+                                     
                                     <td>Props make components reusable.</td>
                                     <td>State can not make components reusable.</td>
                                 </tr>
                                 <tr>
-                                    <td><b>7</b></td>
+                                     
                                     <td>Stateless component can have Props.</td>
                                     <td>Stateless components can not have State.</td>
                                 </tr>
