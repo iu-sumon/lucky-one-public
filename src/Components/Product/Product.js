@@ -4,7 +4,9 @@ const Product = (props) => {
     const { img, name, price } = props.product;
     return (
 
-        <div className='product-cart'>
+        <div 
+        data-aos="zoom-in"
+        className='product-cart'>
             <img src={img} alt="" />
             <h6 className='mt-4'>{name}</h6>
             <p><b>Price:{price}</b></p>

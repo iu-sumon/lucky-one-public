@@ -8,20 +8,20 @@ const ReactAccordion = () => {
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>How react works?</Accordion.Header>
                     <Accordion.Body>
-                    React uses a declarative paradigm that makes it easier to reason about your application and aims to be both efficient and flexible. It designs simple views for each state in your application, and React will efficiently update and render just the right component when your data changes.
-                    It defines the logical structure of documents and the way a document is accessed and manipulated.). So, to make it faster, React implements a virtual DOM that is basically a DOM tree representation in JavaScript. So when it needs to read or write to the DOM, it will use the virtual representation of it. Then the virtual DOM will try to find the most efficient way to update the browser’s DOM.
+                    React uses a declarative paradigm that makes it easier to reason about User's application and aims to be both efficient and flexible. It designs simple views for each state in your application, and React will efficiently update and render just the right component when your data changes.
+                    React implements a virtual DOM that is basically a DOM tree representation in JavaScript. So when it needs to read or write to the DOM, it will use the virtual representation of it. Then the virtual DOM will try to find the most efficient way to update the browser’s DOM.
 
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
                     <Accordion.Header>Props Vs State</Accordion.Header>
                     <Accordion.Body>
-                        <table class="table table-hover">
+                        <table className="table table-hover table-responsive">
                             <tbody>
                                 <tr>
                                     <th scope="col">No.</th>
-                                    <th scope="col" class="text-center">Props</th>
-                                    <th scope="col" class="text-center">State</th>
+                                    <th scope="col" className="text-center">Props</th>
+                                    <th scope="col" className="text-center">State</th>
 
                                 </tr>
                                 <tr>

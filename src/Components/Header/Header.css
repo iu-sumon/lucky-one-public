@@ -6,9 +6,7 @@ header
     height:70px;
     background-color: rgb(41, 220, 91);
     font-family:Lato;
-    position:sticky;
-    z-index:10;
-    top:0%;
+     
 }
 header h2{
     font-size:28px;
@@ -26,4 +24,18 @@ nav a
 }
 nav a:hover{
   color:coral;
+}
+@media only screen and (max-width:600px)
+{   
+   header{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+   
+    }
+   nav a{
+       margin-right:15px;
+       margin-top:0px;
+   }
 }
