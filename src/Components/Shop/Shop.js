@@ -32,7 +32,7 @@ const Shop = () => {
 
         }
         else {
-            alert('Can not add more then for items!')
+            alert('Can not add more then 4 items!')
         }
 
     }
