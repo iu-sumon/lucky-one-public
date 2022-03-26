@@ -6,16 +6,26 @@ import './Shop.css';
 import AOS from 'aos';
 const Shop = () => {
 
+    //................State for main data..............//
+
     const [products, setProducts] = useState([])
+
+    //..................State for single cart.............//
+
     const [cart, setCart] = useState([])
+
+    //...............useEffect for main data loading
+
     useEffect(() => {
         fetch('products.json')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])
 
+    //..................Handler function for add to cart button......................//
+
     const handler = (selectedProduct) => {
-// git problems
+
         if (cart.length < 4) {
             const getCarts = ([...cart, selectedProduct])
             setCart(getCarts)
@@ -26,9 +36,15 @@ const Shop = () => {
         }
 
     }
+
+    //.................Handler function for removing selected cart.......................//
+
     const removeOrderInfo = () => {
         setCart([])
     }
+
+     //.................Handler function for choose only one cart.........................//
+     
     const chooseOneRandomly = () => {
         let newCart = [...cart]
         if (newCart.length) {
@@ -37,6 +53,7 @@ const Shop = () => {
             setCart(newCart)
         }
     }
+    //...............................AOS Animation function................................//
     useEffect(() => {
         AOS.init();
     }, []);
@@ -46,24 +63,30 @@ const Shop = () => {
 
             <div>
                 <h2 className='productTitle'>Latest Collection</h2>
+
                 <div className='product-container'>
 
                     {
                         products.map(product => <Product
+                        
                             product={product}
                             key={product.id}
                             handler={handler}
+
                         ></Product>)
                     }
                 </div>
+
             </div>
 
             <div className='order-summary'>
 
                 <Order
+
                     cart={cart}
                     removeOrderInfo={removeOrderInfo}
                     chooseOneRandomly={chooseOneRandomly}
+                    
                 ></Order>
 
             </div>
