@@ -22,7 +22,7 @@ const Order = (props) => {
                   }
 
                 <div>
-                    <button className='btn-choose'>Choose One For Me</button>
+                    <button onClick={props.chooseOneRandomly} className='btn-choose'>Choose One For Me</button>
 
                     <button onClick={props.removeOrderInfo} className='btn-remove'>Choose Again</button>
                 </div>

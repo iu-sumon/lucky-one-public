@@ -5,6 +5,7 @@ import Product from '../Product/Product';
 import './Shop.css';
 import AOS from 'aos';
 const Shop = () => {
+
     const [products, setProducts] = useState([])
     const [cart, setCart] = useState([])
     useEffect(() => {
@@ -14,16 +15,27 @@ const Shop = () => {
     }, [])
 
     const handler = (selectedProduct) => {
+
         if (cart.length < 4) {
-            setCart([...cart, selectedProduct])
+            const getCarts = ([...cart, selectedProduct])
+            setCart(getCarts)
+
         }
         else {
-            alert('All ready added')
+            alert('Can not add more then for items!')
         }
 
     }
     const removeOrderInfo = () => {
         setCart([])
+    }
+    const chooseOneRandomly = () => {
+        let newCart = [...cart]
+        if (newCart.length) {
+            let getCart = newCart[Math.floor(Math.random() * newCart.length)]
+            newCart = [getCart]
+            setCart(newCart)
+        }
     }
     useEffect(() => {
         AOS.init();
@@ -51,6 +63,7 @@ const Shop = () => {
                 <Order
                     cart={cart}
                     removeOrderInfo={removeOrderInfo}
+                    chooseOneRandomly={chooseOneRandomly}
                 ></Order>
 
             </div>
