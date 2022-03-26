@@ -1,7 +1,7 @@
 .orderCart
 {
     display: flex;
-    justify-content: space-around;
+     justify-content: space-around;
     align-items: center;
     background-color:rgb(41, 220, 91);
     margin:10px;
